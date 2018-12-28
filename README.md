@@ -1,5 +1,16 @@
 # GregorianMusicEditor
 
+The purpose of this project is to develop a web-based GUI for composing Gregorian chant music. The goal is to allow the user to click on staff lines to add notes to a .gabc file while recording them on the screen visually. The resulting file can then be converted to a PDF and downloaded.
+
+## Progress
+- [x] Click staff lines to visually record note progression
+- [ ] Record notes in .gabc format
+- [ ] Convert .gabc to PDF and export
+- [ ] Add lyrics
+- [ ] Edit existing lyrics and notes
+- [ ] Add simple neume type selector
+- [ ] Add complex neumes
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
 
 ## Development server
