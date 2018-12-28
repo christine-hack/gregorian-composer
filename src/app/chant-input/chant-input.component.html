@@ -1,0 +1,3 @@
+<div class="staff-container">
+  <staff-line *ngFor="let line of staff" [type]="line.type" [letterValue]="line.name" [notePosition]="noteCount" (click)="addNote()"></staff-line>
+</div>

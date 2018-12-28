@@ -1,0 +1,9 @@
+<div class="staff {{type}}" (mouseenter)="showGhost = true" (mouseout)="showGhost = false" (click)="addNote()">
+  <!--{{type}}, {{letterValue}}, {{notePosition}}-->
+  <div class="note" 
+    *ngFor="let note of notes"
+    [ngStyle]="calcNotePosition(note)">
+    <span>{{ note.line }}{{ note.position }}</span>
+  </div>
+  <div class="note ghost" [hidden]="!showGhost">{{ notePosition }}</div>
+</div>

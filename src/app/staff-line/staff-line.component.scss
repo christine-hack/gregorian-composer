@@ -1,0 +1,50 @@
+div.staff {
+    text-align:center;
+    position:relative;
+
+    .note {
+        display:inline-block;
+        position:absolute;
+        background:#333;
+        height:50px;
+        width:50px;
+        color:#fff;
+        font-family:sans-serif;
+    
+        &.ghost {
+            opacity:0.2;
+            right:0;
+
+            &[hidden] {
+                display:none;
+            }
+        }
+
+        &.set {
+            left:-50px;
+
+            /*&:last-child {
+                left:-75px;
+            }*/
+        }
+    }
+
+    //spaces
+    &.space {
+        height:50px;
+
+        .note {
+            top:5px;
+        }
+    }
+
+    //lines
+    &.line {
+        height:10px;
+        border-bottom:2px solid #333;
+
+        .note {
+            top:-15px;
+        }
+    }
+}
